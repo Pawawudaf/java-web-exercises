@@ -19,6 +19,7 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 @SpringJUnitConfig
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ApplicationContextTest {
+
     @Configuration
     @ComponentScan(basePackages = "com.bobocode")
     static class TestConfig {

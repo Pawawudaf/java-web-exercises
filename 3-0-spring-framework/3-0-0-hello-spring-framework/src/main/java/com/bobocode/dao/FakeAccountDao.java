@@ -17,7 +17,7 @@ import java.util.stream.Stream;
  * {@link TestDataGenerator} instance.
  */
 
-@Component
+@Component("accountDao")
 public class FakeAccountDao implements AccountDao {
 
     private List<Account> accounts;

@@ -22,5 +22,4 @@ public class ApplicationConfig {
     public TestDataGenerator dataGenerator() {
         return new TestDataGenerator();
     }
-    // todo: verify final implementation by running ApplicationContextTest
 }
