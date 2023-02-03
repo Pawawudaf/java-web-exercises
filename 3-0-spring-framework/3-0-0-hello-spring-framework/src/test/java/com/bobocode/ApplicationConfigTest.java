@@ -121,7 +121,7 @@ class ApplicationConfigTest {
     private Method findTestDataGeneratorBeanMethod(Method[] methods) {
         for (Method method : methods) {
             if (method.getReturnType().equals(TestDataGenerator.class)
-                    && method.getDeclaredAnnotation(Bean.class) != null) {
+                && method.getDeclaredAnnotation(Bean.class) != null) {
                 return method;
             }
         }

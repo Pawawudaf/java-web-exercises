@@ -25,8 +25,8 @@ public class FakeAccountDao implements AccountDao {
     @Autowired
     public FakeAccountDao(TestDataGenerator testDataGenerator) {
         this.accounts = Stream.generate(testDataGenerator::generateAccount)
-                .limit(20)
-                .toList();
+            .limit(20)
+            .toList();
     }
 
     @Override
