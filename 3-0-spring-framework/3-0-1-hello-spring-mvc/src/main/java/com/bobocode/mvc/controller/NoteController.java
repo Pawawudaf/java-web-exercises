@@ -2,6 +2,8 @@ package com.bobocode.mvc.controller;
 
 import com.bobocode.mvc.data.Notes;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * {@link NoteController} is a typical controller that powers Spring MVC Notes application. This application provides
@@ -26,8 +28,12 @@ import lombok.RequiredArgsConstructor;
  * back-end applications. The back-end app, will only need to provide data and don't care about view. In that case
  * the same controller will look like {@link com.bobocode.mvc.api.NoteRestController}
  */
+
 @RequiredArgsConstructor
+@Controller
+@RestController("/notes")
 public class NoteController {
+
     private final Notes notes;
 
     // TODO: implement controller methods according to the javadoc and verify your impl using NoteControllerTest

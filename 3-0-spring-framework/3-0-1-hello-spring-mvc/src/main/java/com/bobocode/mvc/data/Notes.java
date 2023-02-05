@@ -3,12 +3,12 @@ package com.bobocode.mvc.data;
 import com.bobocode.mvc.model.Note;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
 @Component
 public class Notes {
+
     private final Map<UUID, Note> notesMap = new HashMap<>();
 
     public List<Note> getAll(){
